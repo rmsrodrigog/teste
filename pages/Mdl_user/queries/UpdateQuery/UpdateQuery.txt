@@ -1,0 +1,13 @@
+UPDATE mdl_user SET
+		auth = '{{update_form.fieldState.auth.isVisible ? update_form.formData.auth : update_form.sourceData.auth}}',
+		confirmed = '{{update_form.fieldState.confirmed.isVisible ? update_form.formData.confirmed : update_form.sourceData.confirmed}}',
+    policyagreed = '{{update_form.fieldState.policyagreed.isVisible ? update_form.formData.policyagreed : update_form.sourceData.policyagreed}}',
+		deleted = '{{update_form.fieldState.deleted.isVisible ? update_form.formData.deleted : update_form.sourceData.deleted}}',
+		suspended = '{{update_form.fieldState.suspended.isVisible ? update_form.formData.suspended : update_form.sourceData.suspended}}',
+		mnethostid = '{{update_form.fieldState.mnethostid.isVisible ? update_form.formData.mnethostid : update_form.sourceData.mnethostid}}',
+		username = '{{update_form.fieldState.username.isVisible ? update_form.formData.username : update_form.sourceData.username}}',
+		password = '{{update_form.fieldState.password.isVisible ? update_form.formData.password : update_form.sourceData.password}}',
+		idnumber = '{{update_form.fieldState.idnumber.isVisible ? update_form.formData.idnumber : update_form.sourceData.idnumber}}',
+		firstname = '{{update_form.fieldState.firstname.isVisible ? update_form.formData.firstname : update_form.sourceData.firstname}}',
+		lastname = '{{update_form.fieldState.lastname.isVisible ? update_form.formData.lastname : update_form.sourceData.lastname}}'
+  WHERE id = {{data_table.selectedRow.id}};

@@ -1,0 +1,26 @@
+INSERT INTO mdl_user (
+	auth,
+	confirmed,
+	policyagreed,
+	deleted,
+	suspended,
+	mnethostid,
+	username,
+	password,
+	idnumber,
+	firstname,
+	lastname
+)
+VALUES (
+	'{{insert_form.formData.auth}}',
+	'{{insert_form.formData.confirmed}}',
+	'{{insert_form.formData.policyagreed}}',
+	'{{insert_form.formData.deleted}}',
+	'{{insert_form.formData.suspended}}',
+	'{{insert_form.formData.mnethostid}}',
+	'{{insert_form.formData.username}}',
+	'{{insert_form.formData.password}}',
+	'{{insert_form.formData.idnumber}}',
+	'{{insert_form.formData.firstname}}',
+	'{{insert_form.formData.lastname}}'
+);

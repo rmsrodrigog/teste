@@ -1,0 +1,2 @@
+DELETE FROM mdl_user
+  WHERE id = {{data_table.triggeredRow.id}};

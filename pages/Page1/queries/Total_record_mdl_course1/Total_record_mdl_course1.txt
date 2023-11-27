@@ -1,0 +1,1 @@
+SELECT COUNT(*) from mdl_course WHERE fullname LIKE '%{{Table1.searchText}}%';
